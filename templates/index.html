@@ -1,0 +1,111 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Streamlab - Video Streaming" />
+    <meta name="description" content="Streamlab - Video Streaming Platform" />
+    <meta name="author" content="StreamLab" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Streamlab - Video Streaming</title>
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}" />
+  </head>
+  <body>
+    <!-- Loader -->
+    <div id="gen-loading">
+      <div id="gen-loading-center">
+        <img src="{% static 'images/logo-1.png' %}" alt="loading" />
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header id="gen-header" class="gen-header-style-1 gen-has-sticky">
+      <div class="gen-bottom-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">
+                  <img class="img-fluid logo" src="{% static 'images/logo-1.png' %}" alt="streamlab-logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                  <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/register">Register</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/login">
+                        <span class="btn btn-primary">Login</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Description Section Start -->
+    <section class="gen-section-padding-5 pt-20 pb-20">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2>Welcome to Streamlab</h2>
+            <p class="mt-3">
+              Streamlab is a modern video streaming platform designed to bring your favorite movies and shows to one place. 
+              Discover a vast library of content, from thrilling dramas to hilarious comedies, all at your fingertips. 
+              Join us and dive into the world of entertainment!
+            </p>
+            <a href="/login" class="btn btn-primary mt-4">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Description Section End -->
+
+    <!-- Footer -->
+    <footer id="gen-footer">
+      <div class="gen-footer-style-1">
+        <div class="gen-footer-top">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-3 col-md-6">
+                <div class="widget">
+                  <img src="{% static 'images/asset-0.png' %}" class="gen-footer-logo" alt="gen-footer-logo" />
+                  <p>Streamlab brings your favorite movies and shows to one place.</p>
+                  <ul class="social-link">
+                    <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#" class="skype"><i class="fab fa-skype"></i></a></li>
+                    <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back-to-Top -->
+    <div id="back-to-top">
+      <a class="top" id="top" href="#top"><i class="ion-ios-arrow-up"></i></a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+  </body>
+</html>

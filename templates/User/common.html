@@ -1,0 +1,85 @@
+{% load static %}
+{% for i in messages %}
+<script>
+    alert('{{ i }}');
+</script>
+{% endfor %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Streamlab - Video Streaming HTML5 Template" />
+    <meta name="description" content="Streamlab - Video Streaming HTML5 Template" />
+    <meta name="author" content="StreamLab" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>YOU TUBE</title>
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}" />
+
+  </head>
+  <body>
+    <!-- Loader -->
+ 
+
+    <!-- Header -->
+    <header id="gen-header" class="gen-header-style-1 gen-has-sticky bg-dark">
+      <div class="gen-bottom-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="http://127.0.0.1:8000/userHome#"><img class="img-fluid logo" src="{% static 'images/logo-1.png' %}" alt="streamlab-image" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"><i class="fas fa-bars"></i></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/userHome">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/ytVideos">Yt videos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/analyze">View Yt videos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/video_playlists">video_playlists</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/">
+						<span class="btn btn-primary">
+
+							LogOut
+						</span>
+					</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+
+
+    {% block content %}{% endblock  %}
+    <!-- Footer -->
+
+
+    <!-- Back-to-Top -->
+    <div id="back-to-top">
+      <a class="top" id="top" href="#top"><i class="ion-ios-arrow-up"></i></a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/streamlab-core.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+  </body>
+</html>

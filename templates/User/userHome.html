@@ -1,0 +1,110 @@
+{% extends 'User/common.html' %}
+{% block content %}
+  {% load static %}
+
+  <!-- owl-carousel images Start -->
+
+
+
+  <section class="gen-section-padding-2 pt-3 pb-3 home-singal-silder">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="gen-banner-movies">
+            <div class="owl-carousel owl-loaded owl-drag" 
+                 data-dots="true" 
+                 data-nav="false" 
+                 data-desk_num="1" 
+                 data-lap_num="1" 
+                 data-tab_num="1" 
+                 data-mob_num="1" 
+                 data-mob_sm="1" 
+                 data-autoplay="true" 
+                 data-loop="true" 
+                 data-margin="30">
+              <div class="item" style="background: url('images/background/asset-19.jpg') no-repeat center center / cover;">
+                <div class="gen-movie-contain h-100 d-flex align-items-center">
+                  <div class="container">
+                    <div class="row justify-content-center">
+                      <div class="col-xl-6 col-lg-8 col-md-10 text-center text-xl-start">
+                        <div class="gen-movie-info">
+                          <h3 class="text-white">Dream Of Dragons</h3>
+                        </div>
+                        <div class="gen-movie-meta-holder mb-3">
+                          <ul class="list-inline">
+                            <li class="list-inline-item">1 Season</li>
+                            <li class="list-inline-item">5 Episodes</li>
+                            <li class="list-inline-item">2019 to 2020</li>
+                            <li class="list-inline-item">
+                              <a href="drama.html" class="text-decoration-none text-white"><span>Drama</span></a>
+                            </li>
+                          </ul>
+                        </div>
+                        <p class="text-white-50">
+                          Streamlab is a long established fact that a reader will be distracted by the readable content of a page when Streamlab at its layout.
+                        </p>
+                        <div class="gen-movie-action mt-3">
+                          <div class="gen-btn-container button-1">
+                            <a href="single-movie.html" class="gen-button btn btn-primary">
+                              <i class="ion ion-play" aria-hidden="true"></i> <span class="text">Play Now</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+  <!-- owl-carousel images End -->
+
+  <footer id="gen-footer">
+    <div class="gen-footer-style-1">
+      <div class="gen-footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-3 col-md-6">
+              <div class="widget">
+                <img src="{% static 'images/asset-0.png' %}" class="gen-footer-logo" alt="gen-footer-logo" />
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <ul class="social-link">
+                  <li>
+                    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#" class="facebook"><i class="fab fa-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href="#" class="facebook"><i class="fab fa-skype"></i></a>
+                  </li>
+                  <li>
+                    <a href="#" class="facebook"><i class="fab fa-twitter"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Add other footer columns here -->
+          </div>
+        </div>
+      </div>
+      <div class="gen-copyright-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 align-self-center">
+              <span class="gen-copyright"><a target="_blank" href="#">Copyright 2021 Streamlab All Rights Reserved.</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+{% endblock %}
